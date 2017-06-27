@@ -65,9 +65,31 @@ pagination_dir: page
 ## Themes: https://hexo.io/themes/
 theme: next
 
+#插件配置
+plugins: hexo-generator-feed 
+#- hexo-generator-sitemap 
+
+feed:
+  type: atom ##feed类型 atom或者rss2
+  path: atom.xml ##feed路径
+  limit: 20  ##feed文章最小数量
+
+sitemap:
+  path: sitemap.xml #path 表示 Sitemap 的路径. 默认为 sitemap.xml.
+
+baidusitemap:
+  path: baidusitemap.xml
+
 # Deployment
 ## Docs: https://hexo.io/docs/deployment.html
 deploy:
   type: git
   repo: https://github.com/xyygit/myBlog.git
   branch: master
+
+#搜索
+search:
+  path: search.xml
+  field: post
+  format: html
+  limit: 10000
