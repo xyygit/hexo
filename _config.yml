@@ -93,3 +93,8 @@ search:
   field: post
   format: html
   limit: 10000
+#阅读统计
+leancloud_visitors:
+  enable: true
+  app_id: 7SLxRuN0EDebbt86nSJX0Mbw-gzGzoHsz
+  app_key: k1HV424hdCu8tjTWRAKJEsTg
